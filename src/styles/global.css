@@ -120,6 +120,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.technologies-section {
+  margin-top: 4rem;
+  padding-inline: 1rem;
+}
+
 /* Grid layout for icons */
 .tech-grid {
   display: grid;
@@ -127,30 +132,46 @@ body {
   gap: 1.5rem;
 }
 
+.tech-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.tech-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.tech-category {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #aaa;
+  margin: 2rem 0 1rem;
+}
+
 .tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.2s ease;
 }
 
 .tech-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tech-item img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.5rem;
+  width: 32px;
+  height: 32px;
 }
 
 .tech-item span {
-  font-size: 0.9rem;
-  color: #e0e0e0;
+  font-size: 1rem;
   font-weight: 500;
+  color: #e0e0e0;
 }

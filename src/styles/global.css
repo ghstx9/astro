@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121010;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  padding: 3rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Intro Section */
+.intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.intro .highlight {
+  color: #e7cf4f;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.intro p {
+  font-size: 1.05rem;
+  color: #a19a9a;
+  max-width: 600px;
+  margin-top: 1.2rem;
+}
+
+/* Projects Section */
+.projects {
+  margin-top: 4rem;
+}
+
+.projects h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #1b1a1a;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #b2abab;
+}
+
+.technologies {
+  margin-top: 4rem;
+}
+
+.technologies h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout for icons */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tech-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.tech-item span {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  font-weight: 500;
+}

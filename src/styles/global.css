@@ -211,3 +211,18 @@ body {
 .fade-in-up.delay-2 {
   animation-delay: 0.6s;
 }
+
+.site-footer {
+  background-color: #0B1620;
+  padding: 1rem 0;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+.site-footer p {
+  margin: 0;
+}
+

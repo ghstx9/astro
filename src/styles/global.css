@@ -125,7 +125,6 @@ body {
   padding-inline: 1rem;
 }
 
-/* Grid layout for icons */
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -174,6 +173,18 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: #e0e0e0;
+}
+
+.tech-group {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.tech-group.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 1.2s ease-out;
 }
 
 @keyframes fadeInUp {
